@@ -4,19 +4,19 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-//        int n = 10000;
-//        for (int i = 2; i <= n; i++) {
-//            boolean isPrime = true;
-//            for (int j = 2; j < i; j++) {
-//                if (i % j == 0) {
-//                    isPrime = false;
-//                    break;
-//                }
-//            }
-//            if (isPrime) {
-//                System.out.println(i);
-//            }
-//        }
+        int n = 10000;
+        for (int i = 2; i <= n; i++) {
+            boolean isPrime = true;
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
+                System.out.println(i);
+            }
+        }
         System.out.println("-------------------\n Mars mission \n По условию необходимо переправить 90000 ящиков " +
                 "\n при вместимости контейнера - 34 ящика, вместимость корабля - 11 контейнеров");
         Scanner numOfBoxes = new Scanner(System.in);
